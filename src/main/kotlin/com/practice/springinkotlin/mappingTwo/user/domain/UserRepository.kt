@@ -1,4 +1,4 @@
-package com.practice.springinkotlin.user.domain
+package com.practice.springinkotlin.mappingTwo.user.domain
 
 import org.springframework.data.jpa.repository.JpaRepository
 
