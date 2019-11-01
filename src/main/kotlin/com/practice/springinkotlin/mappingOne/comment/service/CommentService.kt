@@ -1,7 +1,7 @@
 package com.practice.springinkotlin.mappingOne.comment.service
 
-import com.practice.springinkotlin.mappingOne.comment.domain.CommentRepository
+import com.practice.springinkotlin.mappingOne.comment.domain.CommentOneRepository
 import org.springframework.stereotype.Service
 
 @Service
-class CommentService(val commentRepository: CommentRepository)
+class CommentOneService(val commentOneRepository: CommentOneRepository)

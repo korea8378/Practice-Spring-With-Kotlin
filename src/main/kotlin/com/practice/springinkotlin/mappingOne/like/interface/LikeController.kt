@@ -1,7 +1,7 @@
 package com.practice.springinkotlin.mappingOne.like.`interface`
 
-import com.practice.springinkotlin.mappingTwo.like.service.LikeService
+import com.practice.springinkotlin.mappingOne.like.service.LikeOneService
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-class LikeController(var likeService: LikeService)
+class LikeOneController(var likeOneService: LikeOneService)

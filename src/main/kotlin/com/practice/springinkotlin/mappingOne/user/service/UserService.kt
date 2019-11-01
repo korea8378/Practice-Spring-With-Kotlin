@@ -1,7 +1,7 @@
 package com.practice.springinkotlin.mappingOne.user.service
 
-import com.practice.springinkotlin.mappingOne.user.domain.UserRepository
+import com.practice.springinkotlin.mappingOne.user.domain.UserOneRepository
 import org.springframework.stereotype.Service
 
 @Service
-class UserService(val userRepository: UserRepository)
+class UserOneService(val userOneRepository: UserOneRepository)

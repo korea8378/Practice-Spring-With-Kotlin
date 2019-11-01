@@ -1,7 +1,7 @@
 package com.practice.springinkotlin.mappingOne.like.service
 
-import com.practice.springinkotlin.mappingTwo.like.domain.LikeRepository
+import com.practice.springinkotlin.mappingOne.like.domain.LikesOneRepository
 import org.springframework.stereotype.Service
 
 @Service
-class LikeService(val likeRepository: LikeRepository)
+class LikeOneService(val likesOneRepository: LikesOneRepository)

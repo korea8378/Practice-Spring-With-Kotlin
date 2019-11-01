@@ -14,18 +14,6 @@ import javax.persistence.*
 
 
 //oneToMany 단방향
-@Entity
-class User(@Id @GeneratedValue(strategy = GenerationType.IDENTITY) var id: Long? = null,
-           var userId: String,
-           var password: String,
-           var name: String,
-           var age: Long,
-           @OneToMany(cascade = [CascadeType.PERSIST, CascadeType.MERGE])
-           @JoinColumn(name = "user_id")
-           var list: List<Post>)
-
-
-// 양방향
 //@Entity
 //class User(@Id @GeneratedValue(strategy = GenerationType.IDENTITY) var id: Long? = null,
 //           var userId: String,
@@ -33,4 +21,16 @@ class User(@Id @GeneratedValue(strategy = GenerationType.IDENTITY) var id: Long?
 //           var name: String,
 //           var age: Long,
 //           @OneToMany(cascade = [CascadeType.PERSIST, CascadeType.MERGE])
-//           var list: List<Post>)
+//           @JoinColumn(name = "userId")
+//           var list: MutableList<Post>)
+
+
+// 양방향
+@Entity
+class User(@Id @GeneratedValue(strategy = GenerationType.IDENTITY) var id: Long? = null,
+           var userId: String,
+           var password: String,
+           var name: String,
+           var age: Long,
+           @OneToMany(cascade = [CascadeType.PERSIST, CascadeType.MERGE], mappedBy = "user")
+           var list: MutableList<Post>)
