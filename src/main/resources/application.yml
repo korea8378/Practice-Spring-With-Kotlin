@@ -1,8 +1,9 @@
 spring:
   datasource:
-    url: jdbc:mysql://${MYSQL_URL}?useUnicode=true&characterEncoding=UTF-8&useSSL=false
-    username: ${USER_NAME}
-    password: ${USER_PASSWORD}
+    url: jdbc:mysql://localhost:3306/example?useUnicode=true&characterEncoding=UTF-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+#    url: jdbc:mysql://localhost:3306/?characterEncoding=UTF-8&serverTimezone=UTC
+    username: user
+    password: 1234
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
@@ -15,3 +16,4 @@ spring:
     properties:
       hibernate:
         format_sql: true
+
