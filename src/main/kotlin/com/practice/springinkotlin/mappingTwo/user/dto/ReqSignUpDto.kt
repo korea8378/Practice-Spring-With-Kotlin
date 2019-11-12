@@ -1,7 +1,7 @@
 package com.practice.springinkotlin.mappingTwo.user.dto
 
-data class ReqUserDto(
+data class ReqSignUpDto(
         val userId: String,
         val password: String,
         val name: String,
-        val age: Long)
+        val age: Int)

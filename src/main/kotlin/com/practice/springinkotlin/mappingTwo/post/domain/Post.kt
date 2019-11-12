@@ -1,11 +1,9 @@
 package com.practice.springinkotlin.mappingTwo.post.domain
 
-import javax.persistence.Entity
-import javax.persistence.GeneratedValue
-import javax.persistence.GenerationType
-import javax.persistence.Id
+import javax.persistence.*
 
 @Entity
+@Table(name = "posts_yj")
 class Post(@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
            var id: Long? = null,
            var writer: String,
@@ -13,4 +11,6 @@ class Post(@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
            var content: String,
            var likeCount: Long,
            var disLikeCount: Long,
-           var userId: Long)
+           var userId: Long){
+    constructor(writer: String, title: String, content: String, userId: Long):this(null,writer,title, content,0,0,userId)
+}
