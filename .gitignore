@@ -1,6 +1,5 @@
 .idea
 
-
 # Created by https://www.gitignore.io/api/macos,kotlin,intellij
 # Edit at https://www.gitignore.io/?templates=macos,kotlin,intellij
 
@@ -139,3 +138,6 @@ Temporary Items
 .apdisk
 
 # End of https://www.gitignore.io/api/macos,kotlin,intellij
+
+.gradle/
+build/
