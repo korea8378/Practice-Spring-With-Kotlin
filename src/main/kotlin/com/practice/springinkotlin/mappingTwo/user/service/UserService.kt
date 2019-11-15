@@ -16,8 +16,7 @@ class UserService(val userRepository: UserRepository) {
     }
 
     fun signIn(reqSignInDto: ReqSignInDto): User {
-//        val user = User(reqSig/**/nInDto.userId,reqSignInDto.password)
-        return userRepository.findByUserIdAndPassword(reqSignInDto.userId,reqSignInDto.password)
+        return userRepository.findByUserIdAndPassword(reqSignInDto.userId, reqSignInDto.password)
     }
 }
 

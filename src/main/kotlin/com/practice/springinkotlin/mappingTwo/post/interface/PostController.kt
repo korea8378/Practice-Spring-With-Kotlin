@@ -12,9 +12,9 @@ import java.util.*
 @RequestMapping("/posts")
 class PostController(val postService: PostService){
     @PostMapping("/")
-    fun createPost(@RequestBody requestCreatePostDto: ReqCreatePostDto) : ResponseEntity<String> {
+    fun createPost(@RequestBody requestCreatePostDto: ReqCreatePostDto) : ResponseEntity<Post> {
         val post = postService.createPost(requestCreatePostDto)
-        return ResponseEntity.status(HttpStatus.OK).body("success id:${post.userId}")
+        return ResponseEntity.status(HttpStatus.OK).body(post)
     }
 
     @GetMapping("/{post_id}")
