@@ -8,7 +8,6 @@ import javax.persistence.Id
 @Entity
 class Post(@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
            var id: Long? = null,
-           var writer: String,
            var title: String,
            var content: String,
            var likeCount: Long,

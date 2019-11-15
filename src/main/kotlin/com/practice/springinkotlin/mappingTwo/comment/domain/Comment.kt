@@ -9,6 +9,5 @@ import javax.persistence.Id
 class Comment(@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
               var id: Long? = null,
               var content: String,
-              var writer: String,
               var userId: Long,
               var postId: Long)
