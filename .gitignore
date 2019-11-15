@@ -141,3 +141,5 @@ Temporary Items
 
 .gradle/
 build/
+
+*.yml
